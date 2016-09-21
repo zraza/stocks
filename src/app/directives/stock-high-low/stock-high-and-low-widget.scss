@@ -1,0 +1,23 @@
+.stock-high-and-low-widget-header,
+.stock-high-and-low-widget {
+    clear: both;
+    border-bottom: 1px solid $border-light;
+    width: 100%;
+    >* {
+        width: 19%;
+        padding: 0 5px;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: normal;
+        box-sizing: border-box;
+        &:first-child {
+            width: 39%;
+        }
+    }
+    &:last-child {
+        border-bottom: 0;
+    }
+    &.stock-high-and-low-widget-header {
+        border-bottom-color: $border-dark;
+    }
+}

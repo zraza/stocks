@@ -1,0 +1,49 @@
+[
+  {
+    "description": "  As a user, I want to see list of locations and alerts so that I can clear/acknowledge them.",
+    "elements": [
+      {
+        "id": "am/wm-alerts;list-of-locations-with-alerts",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "List of locations with alerts",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I am on the \"/app/about\" page",
+            "result": {
+              "status": "passed",
+              "duration": 877254647
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/zeeshanraza/data/open_source/tesss/bootstrap/e2e/cucumber/steps_defination.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see list of 100 rows",
+            "result": {
+              "status": "passed",
+              "duration": 2577453
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/zeeshanraza/data/open_source/tesss/bootstrap/e2e/cucumber/steps_defination.js:17"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "am/wm-alerts",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "AM/WM Alerts",
+    "tags": [],
+    "uri": "/Users/zeeshanraza/data/open_source/tesss/bootstrap/e2e/cucumber/main.feature"
+  }
+]
