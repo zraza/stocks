@@ -8,5 +8,4 @@ describe('The main view', function () {
     page = require('./main.po');
   });
 
-  
 });

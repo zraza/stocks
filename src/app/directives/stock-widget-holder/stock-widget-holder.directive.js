@@ -36,11 +36,7 @@
     }
 
     function initData() {
-
       vm.stockSymbols = ['LSE:IBST', '@GB:ASX', 'LSE:RTN', 'LSE:PLP', 'LSE:PAGE', 'LSE:FORT', 'LSE:ENQ', 'LSE:GMS', 'LSE:OXB'];
-
     }
-
-
   }
 })();

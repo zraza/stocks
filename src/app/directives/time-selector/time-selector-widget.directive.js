@@ -34,7 +34,7 @@
   }
 
   /* @ngInject */
-  function Controller() {
+  function Controller(PeriodOptionsService) {
     var vm = this;
 
     activate();
@@ -44,11 +44,7 @@
     }
 
     function initData() {
-      vm.options = {
-        'D': 'Day',
-        '1M': 'Month',
-        '1Y': 'Year'
-      }
+      vm.options = PeriodOptionsService.getAll();
     }
   }
 })();

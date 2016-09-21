@@ -1,8 +1,8 @@
 <section class="stock-high-and-low-widget">
     <h1>Restaurant Group (The) Share Price - {{vm.marketCode}}</h1>
     <p ng-if="vm.error" class="error">{{vm.error}}</p>
-    <p ng-if="!vm.error">Day High {{vm.StockRange.max | currency:"£":2}}</p>
-    <p ng-if="!vm.error">Day Low {{vm.StockRange.min | currency:"£":2}}</p>
+    <p ng-if="!vm.error">{{vm.timeCode|stockPeriod}} High {{vm.StockRange.max | currency:"£":2}}</p>
+    <p ng-if="!vm.error">{{vm.timeCode|stockPeriod}} Low {{vm.StockRange.min | currency:"£":2}}</p>
     <time-selector-widget ng-if="!vm.loading" selected=vm.timeCode></time-selector-widget>
     <p ng-if="vm.loading">loading...</p>
 </section>
